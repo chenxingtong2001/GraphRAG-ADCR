@@ -10,7 +10,7 @@
 
 </div>
 
-![GraphRAG-ADCR 方法流程](assets/graphrag-adcr.svg)
+![GraphRAG-ADCR 方法流程](graphrag-adcr.svg)
 
 > 本项目依据 [A GraphRAG Approach to Enhancing the Ability of Causal Reasoning in Autonomous Driving Cases](https://doi.org/10.3233/FAIA251625) 实现方法流程。检索公式和参数为本项目的实现选择；仓库不附带论文原始数据或实验结果。
 
