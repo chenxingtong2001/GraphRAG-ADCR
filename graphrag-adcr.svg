@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="480" viewBox="0 0 1200 480" role="img" aria-labelledby="title description">
+  <title id="title">GraphRAG-ADCR pipeline</title>
+  <desc id="description">Documents are extracted into Neo4j. Case facts drive causal path retrieval and a baseline model. GraphRAG and baseline answers are compared in an evaluation report.</desc>
+  <defs>
+    <linearGradient id="background" x2="1" y2="1">
+      <stop stop-color="#0f172a"/>
+      <stop offset="1" stop-color="#172c43"/>
+    </linearGradient>
+    <linearGradient id="accent">
+      <stop stop-color="#38bdf8"/>
+      <stop offset="1" stop-color="#5eead4"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M1 1 L7 4 L1 7" fill="none" stroke="#7b94b0" stroke-width="1.5"/>
+    </marker>
+    <style>
+      text { font-family: Arial, Helvetica, sans-serif; }
+      .node { fill: #1b3047; stroke: #36536d; }
+      .label { font-size: 19px; font-weight: 700; fill: #f1f5f9; }
+      .detail { font-size: 13px; fill: #a9bfd3; }
+      .step { font-size: 11px; font-weight: 700; fill: #67d5f2; letter-spacing: 1.5px; }
+      .edge { fill: none; stroke: #7b94b0; stroke-width: 2; marker-end: url(#arrow); }
+    </style>
+  </defs>
+  <rect width="1200" height="480" rx="24" fill="url(#background)"/>
+  <rect x="48" y="43" width="40" height="5" rx="2.5" fill="url(#accent)"/>
+  <text x="48" y="92" fill="#f8fafc" font-size="36" font-weight="700" letter-spacing="1">GraphRAG-ADCR</text>
+  <text x="48" y="123" font-size="16" fill="#a9bfd3">Case evidence. Causal paths. Traceable reasoning.</text>
+  <rect x="940" y="61" width="212" height="30" rx="15" fill="#153c4b" stroke="#2b6c7a"/>
+  <text x="1046" y="81" text-anchor="middle" fill="#7ee4d5" font-size="12" font-weight="700" letter-spacing="1">METHOD OVERVIEW</text>
+
+  <path class="edge" d="M228 214 H272"/>
+  <path class="edge" d="M454 214 H498"/>
+  <path class="edge" d="M680 214 H724"/>
+  <path class="edge" d="M906 214 H950"/>
+  <path class="edge" d="M590 330 V295 H816 V258"/>
+  <path class="edge" d="M680 374 H724"/>
+  <path class="edge" d="M906 374 H950"/>
+  <path class="edge" d="M1052 258 V328"/>
+
+  <rect class="node" x="48" y="170" width="180" height="88" rx="14"/>
+  <text class="step" x="66" y="194">01 / INPUT</text>
+  <text class="label" x="66" y="220">DOCX cases</text>
+  <text class="detail" x="66" y="243">Judgment documents</text>
+
+  <rect class="node" x="274" y="170" width="180" height="88" rx="14"/>
+  <text class="step" x="292" y="194">02 / EXTRACT</text>
+  <text class="label" x="292" y="220">Knowledge</text>
+  <text class="detail" x="292" y="243">Entities + source quotes</text>
+
+  <rect class="node" x="500" y="170" width="180" height="88" rx="14"/>
+  <text class="step" x="518" y="194">03 / GRAPH</text>
+  <text class="label" x="518" y="220">Neo4j</text>
+  <text class="detail" x="518" y="243">Relations + causal paths</text>
+
+  <rect class="node" x="726" y="170" width="180" height="88" rx="14"/>
+  <text class="step" x="744" y="194">04 / RETRIEVE</text>
+  <text class="label" x="744" y="220">Similar cases</text>
+  <text class="detail" x="744" y="243">Ranked paths + evidence</text>
+
+  <rect x="952" y="170" width="200" height="88" rx="14" fill="#123d4b" stroke="#43b6bd"/>
+  <text class="step" x="970" y="194">05 / GENERATE</text>
+  <text class="label" x="970" y="220">GraphRAG answer</text>
+  <text class="detail" x="970" y="243">Reasoning with citations</text>
+
+  <rect class="node" x="500" y="330" width="180" height="88" rx="14"/>
+  <text class="step" x="518" y="354">QUERY</text>
+  <text class="label" x="518" y="380">Case facts</text>
+  <text class="detail" x="518" y="403">Facts + legal question</text>
+
+  <rect class="node" x="726" y="330" width="180" height="88" rx="14"/>
+  <text class="step" x="744" y="354">BASELINE</text>
+  <text class="label" x="744" y="380">LLM answer</text>
+  <text class="detail" x="744" y="403">Same generation model</text>
+
+  <rect x="952" y="330" width="200" height="88" rx="14" fill="#26344e" stroke="#818bb8"/>
+  <text class="step" x="970" y="354" style="fill:#bac5ff">06 / EVALUATE</text>
+  <text class="label" x="970" y="380">Compare + report</text>
+  <text class="detail" x="970" y="403">Metrics + evidence</text>
+
+  <text x="48" y="360" fill="#e2e8f0" font-size="16" font-weight="700">A controlled comparison</text>
+  <text x="48" y="386" fill="#a9bfd3" font-size="14">Shared facts and generation model.</text>
+  <text x="48" y="409" fill="#a9bfd3" font-size="14">Reference answers stay in evaluation.</text>
+  <path d="M48 445 H1152" stroke="#2c4259"/>
+  <text x="48" y="465" fill="#7f9bb4" font-size="11" letter-spacing="1">GraphRAG-ADCR / CODE FRAMEWORK</text>
+</svg>
