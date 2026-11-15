@@ -1,6 +1,6 @@
 <div align="center">
 
-# GraphRAG-ADCR-V2
+# GraphRAG-ADCR
 
 **自动驾驶事故 · 法律因果推理 · 可追溯类案检索**
 
