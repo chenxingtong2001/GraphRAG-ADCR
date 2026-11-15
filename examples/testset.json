@@ -1,0 +1,15 @@
+{
+  "description": "测试案件示例（虚构）",
+  "cases": [
+    {
+      "id": "example_01",
+      "case_type": "机动车交通事故责任纠纷",
+      "facts": "甲驾驶测试车辆时与乙发生轻微碰撞。车辆功能状态、驾驶操作及损害原因尚待查明。",
+      "question": "应核查哪些因果关系和证据？现有信息不足以确定的事项有哪些？",
+      "reference_answer": "",
+      "reference": {},
+      "relevant_case_ids": [],
+      "_annotation_status": "draft"
+    }
+  ]
+}
